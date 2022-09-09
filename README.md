@@ -1,1 +1,1 @@
-# mosze-2022-teszt
+# Gyakorló repository a Széchenyi Egyetem Modern szoftverfejlesztési eszközök órájára.
