@@ -1,0 +1,31 @@
+Hibák a main.cpp programban (main/master ágban):
+
+1. Az "1-100 ertekek duplazasa" nem idézőjelek között van, hanem aposztrófok között. 
+Aposztrófok között egy-egy karaktert használunk, míg idézőjelek közt akár hosszabb szöveggel is dolgozhatunk.
+
+2. A globális konstans neve elírva szerepel a main függvényben: N_ELEMENTS és nem NELEMENTS.
+
+3. Az "1-100 ertekek duplazasa" után nincsen pontos vessző.
+
+4. A második for cikluson belül az "Ertek:" kiíratás után nincsen pontosvessző.
+
+5. Az utolsó for cikluson belüli kiíratásnál is lemaradt a pontos vessző.
+
+6. Az utolsó for ciklusnál, a zárójelen belül a második feltétel után sima vessző van pontos vessző helyett.
+
+7. Az első for ciklusnál hiányzik a zárójelen belül a feltétel 2. és 3. része, avagy, hogy meddig menjen és a növekedés mértéke.
+
+8. "Ertek:" után nincs megadva változó, amely minden egyes ciklus-lefutásnál más értéket mutatna.
+
+9. Az utolsó for ciklusnál, a zárójelen belül nincs értelme a 2. feltételnek, hiszen eleve az lett megadva, hogy 'i' változó értéke 0.
+
+10. A fixen rögzített, szöveges kiírások elől lemaradt az új sort jelző '\n'. Enélkül összefolyik, olvashatatlan. Persze, lehet tenni a sor végére is.
+
+11. Az átlagnak lefoglalt változónak nem lett megadva kezdőérték, valami memóriaszemetet tárol.
+
+12. A 'b' tömbbe 1-től 100-ig lévő értékeket tárolta el, de ki nem íratta, átlagot számolt velük. Nem tudom, hogy ez figyelmetlenségi hiba, vagy direkt így
+volt tervezve. Mindenesetre odaírtam, hogy a duplázott értékekből lett az átlag számítva.
+
+13. Ha 1-től kell nézni az értékeket 100-ig, akkor az 'i' kezdőértéke 1 és i <= N_ELEMENTS-ig megy. Ezt átírtam.
+
++ Nem hiba, de az átláthatóság kedvéért a dupla értékek kiíratása után beszúrtam egy üres sort.
