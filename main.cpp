@@ -27,6 +27,6 @@ int main()
     
     atlag /= N_ELEMENTS;
     std::cout << "Atlag a dupla ertekekbol: " << atlag << std::endl;
-    
+    std::cout<<"Meg fordult erre felé CLQQ5R...";
     return 0;
 }
